@@ -129,9 +129,6 @@ C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.csproj.CoreCompileInputs.cache
-C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.dll
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.pdb
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.genruntimeconfig.cache
@@ -262,3 +259,6 @@ C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\bin\Debug\netcoreapp3.1\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\bin\Debug\netcoreapp3.1\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.csprojAssemblyReference.cache
+C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.csproj.CoreCompileInputs.cache
+C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Product.Microservice\obj\Debug\netcoreapp3.1\Product.Microservice.MvcApplicationPartsAssemblyInfo.cache

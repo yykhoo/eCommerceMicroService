@@ -23,10 +23,10 @@ C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\bin\D
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\bin\Debug\netcoreapp3.1\Ocelot.dll
-C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.csproj.CoreCompileInputs.cache
-C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.csproj.CopyComplete
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.dll
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.pdb
 C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.genruntimeconfig.cache
+C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\yinyin.khoo\Documents\Project\Microservices.WebApi\Gateway.WebApi\obj\Debug\netcoreapp3.1\Gateway.WebApi.MvcApplicationPartsAssemblyInfo.cache
