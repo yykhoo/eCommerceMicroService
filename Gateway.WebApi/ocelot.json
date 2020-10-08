@@ -1,5 +1,6 @@
 {
   "Routes": [
+    //Product.Microservice project
     {
       "DownstreamPathTemplate": "/api/product",
       "DownstreamScheme": "https",
@@ -21,7 +22,44 @@
           "Port": 44392
         }
       ],
-      "UpstreamPathTemplate": "/gateway/product/{id}",
+      "UpstreamPathTemplate": "/gateway/product/id/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/product/{CategoryId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44392
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/product/categoryId/{CategoryId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    //Category.Microservice project
+    {
+      "DownstreamPathTemplate": "/api/category",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44310
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/category",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/category/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44310
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/category/{id}",
       "UpstreamHttpMethod": [ "GET", "DELETE" ]
     }
   ]

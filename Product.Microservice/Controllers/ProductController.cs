@@ -30,9 +30,9 @@ namespace Product.Microservice.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var customers = await _context.Products.ToListAsync();
-            if (customers == null) return NotFound();
-            return Ok(customers);
+            var products = await _context.Products.ToListAsync();
+            if (products == null) return NotFound();
+            return Ok(products);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -41,6 +41,15 @@ namespace Product.Microservice.Controllers
             if (product == null) return NotFound();
             return Ok(product);
         }
+
+        [HttpGet("{CategoryId}")]
+        public async Task<IActionResult> GetByCategoryId(int categoryId)
+        {
+            var products = await _context.Products.Where(a => a.CategoryId == categoryId).ToListAsync();
+            if (products == null) return NotFound();
+            return Ok(products);
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

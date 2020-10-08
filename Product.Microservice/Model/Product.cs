@@ -17,5 +17,6 @@ namespace Product.Microservice.Model
         public int Rating { get; set; }
         public int Stock_Available { get; set; }
         public string Url { get; set; }
+        public int CategoryId { get; set; }
     }
 }
