@@ -11,10 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
-using Product.Microservice.Data;
+using ShoppingCart.Microservice.Data;
 
-namespace Product.Microservice
+namespace ShoppingCart.Microservice
 {
     public class Startup
     {
@@ -28,7 +27,7 @@ namespace Product.Microservice
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(o => o.AddPolicy("ProductCorsPolicy", builder =>
+            services.AddCors(o => o.AddPolicy("ShoppingCartMyPolicy", builder =>
             {
                 builder.AllowAnyOrigin()
                        .AllowAnyMethod()
@@ -39,20 +38,10 @@ namespace Product.Microservice
                options.UseSqlServer(
                    Configuration.GetConnectionString("DefaultConnection"),
                    b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
-            services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
-            #region Swagger
-            services.AddSwaggerGen(c =>
-            {
-                c.IncludeXmlComments(string.Format(@"{0}\Product.Microservice.xml", System.AppDomain.CurrentDomain.BaseDirectory));
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "Microservice API",
-                });
-            });
-            #endregion
-            services.AddControllers();
 
+            services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
+
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,17 +59,6 @@ namespace Product.Microservice
             app.UseCors();
 
             app.UseAuthorization();
-
-            #region Swagger
-            //Enable middleware to server generated Swaager as a JSON endpoint.
-            app.UseSwagger();
-            //Enable middleware to serve swagger-ui ( HTML, JS, CSS, etc.),
-            //specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "EFCore.CodeFirst.WebAPI");
-            });
-            #endregion
 
             app.UseEndpoints(endpoints =>
             {

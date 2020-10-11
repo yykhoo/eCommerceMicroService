@@ -13,9 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customer.Microservice", "Cu
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{84AA7E2D-7AF7-4442-BEEE-F3BEC244E02C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Microservice", "Order.Microservice\Order.Microservice.csproj", "{F505E437-A0E4-495D-B72A-2C97E4387B59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Microservice", "Order.Microservice\Order.Microservice.csproj", "{F505E437-A0E4-495D-B72A-2C97E4387B59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Category.Microservice", "Category.Microservice\Category.Microservice.csproj", "{929D2637-5498-4801-9795-9B0D6D0AD474}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Category.Microservice", "Category.Microservice\Category.Microservice.csproj", "{929D2637-5498-4801-9795-9B0D6D0AD474}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.Microservice", "ShoppingCart.Microservice\ShoppingCart.Microservice.csproj", "{8ED85542-713E-4632-A47B-22F4833ECEB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User.Microservice", "User.Microservice\User.Microservice.csproj", "{9C9C331B-F00E-440F-AEC7-CB3DD5FEF48B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,7 +40,6 @@ Global
 		{E2DBE13C-3525-4F6C-9615-B7C846C05294}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2DBE13C-3525-4F6C-9615-B7C846C05294}.Release|Any CPU.Build.0 = Release|Any CPU
 		{84AA7E2D-7AF7-4442-BEEE-F3BEC244E02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84AA7E2D-7AF7-4442-BEEE-F3BEC244E02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84AA7E2D-7AF7-4442-BEEE-F3BEC244E02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84AA7E2D-7AF7-4442-BEEE-F3BEC244E02C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F505E437-A0E4-495D-B72A-2C97E4387B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,6 +50,14 @@ Global
 		{929D2637-5498-4801-9795-9B0D6D0AD474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929D2637-5498-4801-9795-9B0D6D0AD474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929D2637-5498-4801-9795-9B0D6D0AD474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED85542-713E-4632-A47B-22F4833ECEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED85542-713E-4632-A47B-22F4833ECEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED85542-713E-4632-A47B-22F4833ECEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED85542-713E-4632-A47B-22F4833ECEB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C9C331B-F00E-440F-AEC7-CB3DD5FEF48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9C331B-F00E-440F-AEC7-CB3DD5FEF48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C9C331B-F00E-440F-AEC7-CB3DD5FEF48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C9C331B-F00E-440F-AEC7-CB3DD5FEF48B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +67,8 @@ Global
 		{E2DBE13C-3525-4F6C-9615-B7C846C05294} = {6AEC2735-7BEA-4CB6-94DE-761C0CD28EE8}
 		{F505E437-A0E4-495D-B72A-2C97E4387B59} = {6AEC2735-7BEA-4CB6-94DE-761C0CD28EE8}
 		{929D2637-5498-4801-9795-9B0D6D0AD474} = {6AEC2735-7BEA-4CB6-94DE-761C0CD28EE8}
+		{8ED85542-713E-4632-A47B-22F4833ECEB5} = {6AEC2735-7BEA-4CB6-94DE-761C0CD28EE8}
+		{9C9C331B-F00E-440F-AEC7-CB3DD5FEF48B} = {6AEC2735-7BEA-4CB6-94DE-761C0CD28EE8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFD3254C-9048-43DE-80CC-7370A7C16AD4}

@@ -12,7 +12,7 @@ namespace Product.Microservice.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("MyPolicy")]
+    [EnableCors("ProductCorsPolicy")]
     public class ProductController : ControllerBase
     {
         private IApplicationDbContext _context;
@@ -34,7 +34,7 @@ namespace Product.Microservice.Controllers
             if (products == null) return NotFound();
             return Ok(products);
         }
-        [HttpGet("{id}")]
+        [HttpGet("id/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var product = await _context.Products.Where(a => a.Id == id).FirstOrDefaultAsync();
@@ -42,7 +42,7 @@ namespace Product.Microservice.Controllers
             return Ok(product);
         }
 
-        [HttpGet("{CategoryId}")]
+        [HttpGet("CategoryId/{CategoryId}")]
         public async Task<IActionResult> GetByCategoryId(int categoryId)
         {
             var products = await _context.Products.Where(a => a.CategoryId == categoryId).ToListAsync();
