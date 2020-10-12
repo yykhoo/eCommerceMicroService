@@ -18,6 +18,13 @@ namespace Gateway.WebApi
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(o => o.AddPolicy("GatewayCorsPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
+
             services.AddOcelot();
 
         }
@@ -30,7 +37,9 @@ namespace Gateway.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
+            app.UseRouting(); 
+            
+            app.UseCors("GatewayCorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {

@@ -75,7 +75,7 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/cartitem",
-      "UpstreamHttpMethod": [ "POST", "GET" ]
+      "UpstreamHttpMethod": [ "POST", "GET", "PUT" ]
     },
     {
       "DownstreamPathTemplate": "/api/cartitem/{id}",
@@ -87,7 +87,7 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/cartitem/{id}",
-      "UpstreamHttpMethod": [ "DELETE", "PUT" ]
+      "UpstreamHttpMethod": [ "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/api/cartitem/GetCartItemsByCartId/{cartId}",

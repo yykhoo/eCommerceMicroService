@@ -21,7 +21,7 @@ namespace ShoppingCart.Microservice.Controllers
             _context = context;
         }
         [HttpPost]
-        public async Task<IActionResult> Create(Model.CartItem cartItem)
+        public async Task<IActionResult> Create([FromBody] Model.CartItem cartItem)
         {
             _context.CartItems.Add(cartItem);
             await _context.SaveChanges();
@@ -47,7 +47,9 @@ namespace ShoppingCart.Microservice.Controllers
         public async Task<IActionResult> GetCartItemByProductId(int productId)
         {
             var cartItem = await _context.CartItems.Where(a => a.ProductId == productId).FirstOrDefaultAsync();
+
             if (cartItem == null) return NotFound();
+
             return Ok(cartItem);
         }
         [HttpDelete("{id}")]
